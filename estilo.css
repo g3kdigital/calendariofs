@@ -1,0 +1,1882 @@
+.test,
+.test * {
+  border: solid 1px lightgray;
+}
+
+
+/*---------------------------INDICE
+* IDENTIDAD CORPORATIVA
+- COLORES
+= LETRA
+= FONDOS
+* ANIMACIONES
+* MEDIA QUERIES
+*/
+
+
+/*//////////////////////////////////////
+*********************************COLORES
+//////////////////////////////////////*/
+
+:root{
+  --color-gris: rgb(167,167,167);
+  --color-grisclaro: rgb(200,200,200);
+  --color-negro: rgb(55,52,53);
+  --color-rojo: rgb(237, 50, 55);  
+  --color-verde: rgb(115,191,0);
+  --color-azul: rgb(103,149,182);
+  --color-ocre: rgb(227,145,23);
+  --color-amarillo: rgb(255,255,62);
+  --color-negro2: rgb(102,102,102);
+  --color-blanco: rgb(255,255,255);
+  --color-casiblanco: whitesmoke; 
+  --color-grisoscuro: rgb(87,87,87);
+}
+
+/*=======================LETRA*/
+
+.color-01,
+.letra-gris,
+.dias-semana .dia,
+.letra-gallo,
+.letra-toro,
+.letra-buey,
+/*ZODIACO*/
+.letra-serpiente,
+.texto.gallo.zodiaco,
+.texto.toro.zodiaco,
+.texto.buey.zodiaco,
+.texto.serpiente.zodiaco,
+/*ELEMENTOS*/
+.metal.elemento,
+.seleccion-input  {
+  color: rgb(167,167,167);
+  color: var(--color-gris, rgb(167,167,167));
+}
+
+.color-02,
+.letra-gris-claro,
+.dia-semana,
+.seleccion-input:focus {
+  color: rgb(200, 200, 200);
+  color: var(--color-gris-claro, rgb(200,200,200));
+}
+
+.color-03,
+.letra-negro,
+body {
+  color: rgb(55, 52, 53);
+  color: var(--color-negro, rgb(55,52,53));
+}
+
+.color-04,
+.letra-rojo,
+.letra-caballo,
+.letra-perro,
+.letra-tigre,
+/*ZODIACO*/
+.texto.caballo.zodiaco,
+.texto.caballo.zodiaco::before,
+.texto.perro.zodiaco,
+.texto.tigre.zodiaco,
+/*ELEMENTOS*/
+.fuego.elemento {
+  color: rgb(229, 70, 50);
+  color: var(--color-rojo, rgb(237, 50, 55));
+}
+
+.color-05,
+.letra-verde,
+.letra-cabra,
+.letra-cerdo,
+.letra-jabali,
+.letra-conejo,
+.letra-oveja,
+/*ZODIACO*/
+.texto.cabra.zodiaco,
+.texto.oveja.zodiaco,
+.texto.cerdo.zodiaco, 
+.texto.jabali.zodiaco, 
+.texto.conejo.zodiaco,
+/*ELEMENTOS*/
+.madera.elemento {
+  color: rgb(115, 191, 0);
+  color: var(--color-verde, rgb(115,191,0));
+}
+
+.color-06,
+.letra-azul,
+.letra-mono,
+.letra-rata,
+.letra-dragon,
+.texto.mono.zodiaco,
+.texto.raton.zodiaco,
+.texto.dragon.zodiaco,
+/*ELEMENTOS*/
+.agua.elemento  {
+  color: rgb(103, 149, 182);
+  color: var(--color-azul, rgb(103,149,182));
+}
+
+.color-07,
+.letra-ocre,
+/*ELEMENTOS*/
+.tierra.elemento {
+  color: rgb(227, 145, 23);
+  color: var(--color-ocre, rgb(227,145,23));
+}
+
+.color15,
+.color-amarillo,
+.caja .titulo .texto,
+.btn.cta,
+.logo .nombre,
+.main-form .etiqueta,
+.register-form .etiqueta
+{ color: rgb(255, 255, 62);
+  color: var(--color-amarillo, rgb(255,255,62));
+}
+
+.color-16,
+.color-negro2,
+.logo .k,
+.piepagina .kua,
+.register-form .entrada
+{  color: rgb(102, 102, 102);
+  color: var(--color-negro2, rgb(102,102,102));
+}
+
+.color17,
+.color-blanco,
+.caja .celda.binomial::after,
+.caja .celda.binomial,
+.logo .k,
+.logo .guion{
+  color: #FFF;
+  color: var(--color-blanco, rgb(255,255,255));
+}
+
+/*=======================FONDOS*/
+
+.fondo-01,
+.fondo-gris,
+.fondo-gallo,
+.fondo-toro,
+.fondo-buey,
+.fondo-serpiente,
+.piepagina .etiqueta::before  {
+  background-color: rgb(200, 200, 200);
+  background-color: var(--color-grisclaro, rgb(200,200,200));
+}
+
+.fondo-02,
+.chino .fondo-gris,
+.chino .fondo-gallo,
+.chino .fondo-toro,
+.chino .fondo-serpiente,
+.chino .texto.gallo.zodiaco,
+.chino .texto.gallo.zodiaco ~ .celda,
+.chino .texto.toro.zodiaco,
+.chino .texto.toro.zodiaco ~ .celda,
+.chino .texto.serpiente.zodiaco,
+.chino .texto.serpiente.zodiaco ~ .celda  {
+  background-color: rgb(200, 200, 200);
+  background-color: var(--color-grisclaro, rgb(200,200,200));
+}
+
+.fondo-03,
+.fondo-rojo,
+.fondo-caballo,
+.fondo-perro,
+.fondo-tigre{
+  background-color: rgb(237, 50, 55);
+  background-color: var(--color-rojo, rgb(237, 50, 55));
+}
+
+.fondo-04,
+.chino .fondo-rojo,
+.chino .fondo-caballo,
+.chino .fondo-perro,
+.chino .fondo-tigre,
+.chino .texto.caballo.zodiaco,
+.chino .texto.caballo.zodiaco ~ .celda,
+.chino .texto.perro.zodiaco,
+.chino .texto.perro.zodiaco ~ .celda,
+.chino .texto.tigre.zodiaco,
+.chino .texto.tigre.zodiaco ~ .celda  {
+  background-color: rgb(237, 50, 55);
+  background-color: var(--color-rojo, rgb(237, 50, 55));
+}
+
+.fondo-05,
+.fondo-verde,
+.fondo-cabra,
+.fondo-cerdo,
+.fondo-conejo{
+  background-color: rgb(190, 217, 114);
+  background-color: var(--color-verde, rgb(190, 217, 114));
+}
+
+.fondo-06,
+.chino .fondo-verde,
+.chino .fondo-cabra,
+.chino .fondo-cerdo,
+.chino .fondo-conejo,
+.chino .texto.cabra.zodiaco,
+.chino .texto.cabra.zodiaco ~ .celda, 
+.chino .texto.cerdo.zodiaco,
+.chino .texto.cerdo.zodiaco ~ .celda, 
+.chino .texto.conejo.zodiaco,
+.chino .texto.conejo.zodiaco ~ .celda  {
+  background-color: rgb(196, 215, 111);
+  background-color: var(--color-verde, rgb(196, 215, 111));
+}
+
+.fondo-07,
+.fondo-azul,
+.fondo-mono,
+.fondo-raton,
+.fondo-dragon {
+  background-color: rgb(103, 149, 182);
+  background-color: var(--color-azul, rgb(103, 149, 182));
+}
+
+.fondo-08,
+.chino .fondo-azul,
+.chino .fondo-mono,
+.chino .fondo-raton,
+.chino .fondo-dragon,
+.chino .texto.mono.zodiaco,
+.chino .texto.raton.zodiaco,
+.chino .texto.raton.zodiaco ~ .celda,
+.chino .texto.dragon.zodiaco,
+.chino .texto.dragon.zodiaco ~ .celda  {
+  background-color: rgb(103, 149, 182);
+  background-color: var(--color-azul, rgb(103, 149, 182));
+}
+
+.fondo-09,
+.svg-verde,
+.svg-cabra,
+.svg-cerdo,
+.svg-conejo {
+  fill: rgb(190, 217, 114);
+  fill: var(--color-verde, rgb(190, 217, 114));
+}
+
+.fondo-10,
+.chino .svg-verde,
+.chino .svg-cabra,
+.chino .svg-cerdo,
+.chino .svg-conejo {
+  fill: rgba(196, 215, 111,.9);
+  fill: var(--color-verde, rgb(196, 215, 111));
+}
+
+.fondo-11,
+.fondo-blancohumo,
+.caja
+{  background-color: whitesmoke;
+   background-color: var(--color-casiblanco, whitesmoke);
+}
+
+.fondo-12,
+.caja,
+.register-form .titulo
+{  background-color: #fff;
+   background-color: var(--color-blanco, white);  }
+
+.fondo-13,
+.fondo-grisoscuro,
+.menu{
+  background-color: rgb(87,87,87);
+  background-color: var(--color-grisoscuro, rgb(87,87,87) );
+}
+
+/*
+.fondo-12,
+.fondo-pillarbrillante,
+.arriba .caja:nth-child(even),
+.abajo .caja:nth-child(odd)
+{ background-color: rgba(245,255,250,1); }
+
+.fondo-13,
+.fondo-blancopillar,
+.arriba .caja:nth-child(odd),
+.abajo .caja:nth-child(even)
+{ background-color: rgba(245,255,245,1); }
+
+.fondo-14,
+.fondo-grisazul,
+.arriba .caja:nth-child(even),
+.abajo .caja:nth-child(odd)
+{ background-color: rgba(240,240,240,1); }
+
+.fondo-15,
+.fondo-grisblancoazul,
+.arriba .caja:nth-child(odd),
+.abajo .caja:nth-child(even)
+{ background-color: rgba(247,247,247,1); }
+
+.fondo-16,
+.fondo-blanconaranja,
+.chino .arriba .caja:nth-child(even),
+.chino .caja:nth-child(odd)
+{ background-color: rgb(250, 249, 246);; }
+
+.fondo-17,
+.fondo-blancorojo,
+.chino .arriba .caja:nth-child(odd),
+.chino .caja:nth-child(even)
+{ background-color: rgb(251, 249, 249) }
+*/
+
+.fondo-14,
+.fondo-azulk-lendar{  
+  background-color: rgb(61, 163, 187);
+}
+
+.fondo-15,
+.fondo-negro60,
+.btn,
+.caja .titulo,
+.seleccion-input:focus,
+.caja .celda.binomial::after,
+.logo,
+.main-form .etiqueta,
+.register-form .etiqueta
+ {
+  background-color: rgba(60, 60, 60, 1);
+}
+
+.fondo15,
+.caja .celda.binomial{
+    background-color: rgb(87, 87, 87);
+}
+
+/*=======================BORDES*/
+
+.borde-gris,
+.borde-gris-hijos .dia,
+.borde-gallo,
+.borde-buey,
+.borde-serpiente {
+  border-color: rgb(200, 200, 200)
+}
+
+.borde-rojo,
+.borde-caballo,
+.borde-perro,
+.borde-tigre {
+  border-color: rgb(237, 50, 55)
+}
+
+.borde-verde,
+.borde-cabra,
+.borde-cerdo,
+.borde-conejo {
+  border-color: rgb(190, 217, 114)
+}
+
+.borde-azul,
+.borde-mono,
+.borde-rata,
+.borde-dragon {
+  border-color: rgb(92, 151, 201)
+}
+
+.borde-gris-hijos .borde-abajo-azul,
+.borde-gris-hijos .borde-abajo-mono,
+.borde-gris-hijos .borde-abajo-rata,
+.borde-gris-hijos .borde-abajo-dragon {
+  border-bottom-color: rgb(92, 151, 201)
+}
+
+.borde-gris-hijos .borde-abajo-gris,
+.borde-gris-hijos .borde-abajo-gallo,
+.borde-gris-hijos .borde-abajo-buey,
+.borde-gris-hijos .borde-abajo-serpiente {
+  border-bottom-color: rgb(200, 200, 200)
+}
+
+.borde-gris-hijos .borde-abajo-rojo,
+.borde-gris-hijos .borde-abajo-caballo,
+.borde-gris-hijos .borde-abajo-perro,
+.borde-gris-hijos .borde-abajo-tigre {
+  border-bottom-color: rgb(237, 50, 55)
+}
+
+.borde-gris-hijos .borde-abajo-verde,
+.borde-gris-hijos .borde-abajo-cabra,
+.borde-gris-hijos .borde-abajo-cerdo,
+.borde-gris-hijos .borde-abajo-conejo {
+  border-bottom-color: rgb(190, 217, 114)
+}
+
+/*=======================IMAGENES*/
+
+.blancocelestial,
+body{
+  background-image: url('http://sevenpillars.gutierrezedgar.com/calendario/imgs/fondo-blanco-celestial.jpg');
+}
+
+
+/*//////////////////////////////////////
+*****************************TIPOGRAFIAS
+//////////////////////////////////////*/
+
+
+/*=======================TIPOS*/
+
+.letra-1,
+body,
+*::after,
+.register-form .entrada
+{  font-family: 'Montserrat', arial, sans-serif; }
+
+.letra-2,
+.logo,
+.titulo,
+.kua .gafete,
+.btn.cta,
+.main-form .etiqueta
+{  font-family: 'gang_of_threeregular', verdana, sans-serif; }
+
+.letra-3
+{  font-family: 'Maven Pro', arial, sans-serif; }
+
+.letra3, 
+.zodiaco.icono::before,
+.elemento.icono::before,
+.signo.icono::before
+{  font-family: 'klendar'; }
+
+.letra4,
+.piepagina .etiqueta::before
+{   font-family: 'FontAwesome'; }
+
+/*=======================ICONOS*/
+
+.icono.cabra.zodiaco::before,
+.icono.oveja.zodiaco::before
+{  content: 'c';  }
+.icono.raton.zodiaco::before
+{  content: 'p';  }
+.icono.cerdo.zodiaco::before,
+.icono.jabali.zodiaco::before
+{  content: 'd';  }
+.icono.caballo.zodiaco::before
+{  content: 'a';  }
+.icono.gallo.zodiaco::before
+{  content: 'm';  }
+.icono.dragon.zodiaco::before
+{  content: 'f';  }
+.icono.tigre.zodiaco::before
+{  content: 'r';  }
+.icono.serpiente.zodiaco::before
+{  content: 'q';  }
+.icono.perro.zodiaco::before
+{  content: 'o';  }
+.icono.toro.zodiaco::before,
+.icono.buey.zodiaco::before
+{  content: 's';  }
+.icono.conejo.zodiaco::before
+{  content: 'e';  }
+.icono.mono.zodiaco::before
+{  content: 'n';  }
+
+/*//////////////////////////////////////
+*******************************CREDITOS
+////////////////////////////////////////
+
+ **************************************
+ DISEÑO GRÁFICO Y DISEÑO WEB (HTML/CSS)
+ **************************************
+ @G3Kdigital
+ Edgar Alexander Gutierrez Camacho
+ creativo@gutierrezedgar.com
+ be.net/g3kdigital
+ codepen.io/g3kdigital
+ g3k.co
+ 
+ **************************************
+ DESARROLLO Y BACKEND
+ **************************************
+ Jonny Rojas
+ jrr10472@gmail.com
+*/
+
+/*//////////////////////////////////////
+*******************************ETIQUETAS
+//////////////////////////////////////*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*::before, *::after {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+body {
+  font-weight: normal;
+  font-size: 16px;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+}
+
+body::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(243,243,243,.9);
+  z-index: 1;
+}
+
+body *{
+  position: relative;
+  z-index: 5;
+}
+
+img {
+  display: inline-block;
+  width: 100%;
+}
+
+
+/*//////////////////////////////////////
+**********************************CLASES
+//////////////////////////////////////*/
+
+.logo {
+  display: inline-block;
+  padding: 0 1em .25em;
+  text-align: center;
+  font-size: 2em;
+  line-height: 2em;
+  font-weight: 300;
+}
+
+.logo .nombre{
+  font-weight: 300;  
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo .guion{
+  font-size: 1.2em;
+}
+
+.logo .k {
+  font-size: 2.5em;
+  -webkit-transform: translateY(-0.05em);
+          transform: translateY(-0.05em);
+  margin-right: -0.25em;
+}
+
+.menu{
+  margin-bottom: 2em;
+}
+
+/*=======================ESTRUCTURALES*/
+
+.container {
+  padding: 0 1em;
+}
+
+.esconde {
+  display: none;
+}
+
+.grupo.fila {
+  font-size: 0;
+  letter-spacing: 0;
+}
+
+.enlinear {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.fila.dias {
+  text-align: left;
+}
+
+.fila .dia {
+  display: inline-block;
+  font-size: 0.8rem;
+  letter-spacing: normal;
+  vertical-align: middle;
+  position: relative;
+  width: 14%;
+  width: calc(100% / 7);
+  text-align: center;
+  padding: 0.3em;
+}
+
+.dias-semana .dia {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.enlinear .parrafo {
+  font-size: 0.7em;
+  font-weight: 600;
+  padding: 0.5em;
+  line-height: 1.18em;
+}
+
+.enlinear .frase {
+  width: 50%;
+  padding: 0.2em;
+  max-width: 200px;
+}
+
+/*=================ZODIACO*/
+
+.caja{
+  width: 24%;
+  text-align: center;
+  margin: 0 0.5%;
+  padding: 0 0 1em;
+  position: relative;
+  vertical-align: top;
+  box-shadow: 0 0 1em rgba(0,0,0,.05);
+}
+
+.grupo{
+  padding: 0.3em 2.5%;
+}
+
+.caja .titulo {
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 1.6em;
+  position: relative;
+}
+
+.caja .titulo .texto{
+  width: 70%;
+  width: calc(100% - 4rem);
+  text-align: left;
+  display: inline-block;
+  padding-left: 1em;
+}
+
+.chino .caja .titulo{
+  background-color: rgba(255, 77, 77, 0.9);
+  background-color: rgba(171, 164, 155,.9);
+}
+
+.main-form .titulo {
+  padding: 1em;
+  margin-top: -1.5em;
+}
+
+.caja .celda {
+  display: block;
+  position: relative;
+  left: initial;
+  right: initial;
+  top: initial;
+  bottom: initial;
+}
+
+.caja .celda:not(.numero) {
+  width: 50%;
+  height: 6rem;
+  float: left;
+  margin: 0;
+  font-weight: 600;
+}
+
+.caja .celda.zodiaco {
+  width: 100%;
+  font-size: 2em;
+  height: initial;
+}
+
+.caja .icono.celda.zodiaco::before{
+  font-size: 2.5em;
+  padding: 0;
+  margin-bottom: -0.1em;
+}
+
+.caja .icono.celda.zodiaco::after{
+  font-size: 0.6em;
+}
+
+.texto.zodiaco::before{
+  font-weight: 500;
+}
+
+.icono.celda:not(.numero)::before {
+  display: block;
+  font-size: 3.5rem;
+  padding: .1em 0;
+}
+
+.icono.celda:not(.numero)::after {
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  font-size: 0.6rem;
+}
+
+.texto.cabra.zodiaco::after
+{  content: 'cabra';  }
+.texto.raton.zodiaco::after
+{  content: 'rata';  }
+.texto.cerdo.zodiaco::after
+{  content: 'jabalí';  }
+.texto.jabali.zodiaco::after
+{  content: 'jabalí';  }
+.texto.caballo.zodiaco::after
+{  content: 'caballo';  }
+.texto.gallo.zodiaco::after
+{  content: 'gallo';  }
+.texto.dragon.zodiaco::after
+{  content: 'dragon';  }
+.texto.tigre.zodiaco::after
+{  content: 'tigre';  }
+.texto.serpiente.zodiaco::after
+{  content: 'serpiente';  }
+.texto.perro.zodiaco::after
+{  content: 'perro';  }
+.texto.toro.zodiaco::after
+{  content: 'toro';  }
+.texto.buey.zodiaco::after
+{  content: 'buey';  }
+.texto.conejo.zodiaco::after
+{  content: 'conejo';  }
+.texto.mono.zodiaco::after
+{  content: 'mono';  }
+
+.binomial {
+  position: relative;
+  width: initial;
+}
+
+.caja .celda.binomial{
+  height: 100%;  
+  width: 30%;
+  width: 4rem;
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1em;
+  padding-bottom: .15em;
+  float: right;
+  position: relative;
+}
+
+.chino .binomial {
+  opacity: 0.8;
+}
+
+.binomial::after{
+  content: 'binomial';
+  position: absolute;
+  width: 100%;
+  bottom: 100%;
+  left: 0;
+  height: 2em;
+  line-height: 2em;  
+}
+
+.celda .binomial::after
+{
+  background-color: binomial;
+}
+
+.chino .celda.elemento.icono {
+  color: rgba(0, 0, 0, 0.68);
+  opacity: 0.7;
+}
+
+.elemento.metal::before
+{ content: 'j'; }
+.elemento.madera::before
+{ content: 'h'; }
+.elemento.agua::before
+{ content: 'g'; }
+.elemento.fuego::before
+{ content: 'i'; }
+.elemento.tierra::before
+{ content: 'k'; }
+
+.elemento.metal::after
+{ content: 'metal'; }
+.elemento.madera::after
+{ content: 'madera'; }
+.elemento.agua::after
+{ content: 'agua'; }
+.elemento.fuego::after
+{ content: 'fuego'; }
+.elemento.tierra::after
+{ content: 'tierra'; }
+
+.caja .numero {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin: auto;
+  font-size: 5vw;
+  padding: 1rem;
+  font-family: "maven pro", sans-serif;
+}
+
+.celda.signo {
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 30%;
+  background-size: auto 2em;
+  height: 3em;
+  position: relative;
+}
+
+.chino .celda.signo {
+  opacity: .6;
+}
+
+.celda.signo::before{
+  position: relative;
+  font-size: 0.8em;
+  font-weight: 900;
+  width: 100%;
+  text-align: center;
+}
+
+.signo[data-signo="-"]::before{  
+  content: 'u';
+}
+.signo[data-signo="-"]::after{
+  content: 'YING';  
+}
+.signo[data-signo="+"]::before{  
+  content: 't';
+}
+.signo[data-signo="+"]::after{
+  content: 'YANG';  
+}
+
+.seccion.piepagina {
+  text-align: center;
+  padding: 0 3.5%;
+}
+
+.piepagina .enlinear {
+  width: 30%;
+  width: calc((100% - 14.5rem) / 2);
+}
+
+.piepagina .kua {
+  font-size: 2em;
+  text-align: left;
+}
+
+.piepagina .kua * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.kua .gafete{
+  font-weight: 300;
+}
+
+.gafete:not(:first-child) {
+    padding-left: 1em;
+}
+
+.piepagina .etiqueta{
+  text-align: right;
+  position: relative;
+}
+
+.piepagina .etiqueta::before {
+  content: '\f0d7';
+  position: absolute;
+  right: 1.05em;
+  height: 70%;
+  width: 3em;
+  text-align: center;
+  top: 15%;
+  line-height: 2.6em;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.seleccion-input {
+  width: 50%;
+  border: none;
+  padding: 1em;
+  font-size: .8em;
+  position: relative;
+  z-index: 3;
+}
+
+.seleccion-input option {
+  padding: 1em;
+  display: inline-block;
+  font-size: 1.5em;
+}
+
+.seleccion-input:focus{
+  outline: none;
+}
+
+.btn.cta.calcular{
+  width: 30%;
+  max-width: 13rem;
+  margin-top: 0;
+}
+
+/*
+.grupo.empuja-0 .dia:first-child{
+margin-left: 0%;
+margin-left: calc(100% / 7 * 0);
+}
+
+.grupo.empuja-1 .dia:first-child{
+margin-left: 14%;
+margin-left: calc(100% / 7);
+}
+
+.grupo.empuja-2 .dia:first-child{
+margin-left: 28%;
+margin-left: calc(100% / 7 * 2);
+}
+
+.grupo.empuja-3 .dia:first-child{
+margin-left: 42%;
+margin-left: calc(100% / 7 * 3);
+}
+
+.grupo.empuja-4 .dia:first-child{
+margin-left: 56%;
+margin-left: calc(100% / 7 * 4);
+}
+
+.grupo.empuja-5 .dia:first-child{
+margin-left: 70%;
+margin-left: calc(100% / 7 * 5);
+}
+
+.grupo.empuja-6 .dia:first-child{
+margin-left: 94%;
+margin-left: calc(100% / 7 * 6);
+}*/
+
+.grupo.empuja-0 dia:first-child {
+  margin-left: 0%;
+  margin-left: calc(100% / 7 * 0);
+}
+
+.grupo.empuja-1 dia:first-child {
+  margin-left: 14%;
+  margin-left: calc(100% / 7);
+}
+
+.grupo.empuja-2 dia:first-child {
+  margin-left: 28%;
+  margin-left: calc(100% / 7 * 2);
+}
+
+.grupo.empuja-3 dia:first-child {
+  margin-left: 42%;
+  margin-left: calc(100% / 7 * 3);
+}
+
+.grupo.empuja-4 dia:first-child {
+  margin-left: 56%;
+  margin-left: calc(100% / 7 * 4);
+}
+
+.grupo.empuja-5 dia:first-child {
+  margin-left: 70%;
+  margin-left: calc(100% / 7 * 5);
+}
+
+.grupo.empuja-6 dia:first-child {
+  margin-left: 94%;
+  margin-left: calc(100% / 7 * 6);
+}
+
+
+/*======================PERSONALIZADAS*/
+
+.grupo.encabezado {
+  border-style: solid;
+  border-width: 1px 0;
+  border-color: lightgray;
+  padding: 0.5em 0 0.3em;
+}
+
+.grupo.mes {
+  max-width: 26cm;
+  margin: auto;
+  padding-bottom: 4em;
+  page-break-before: always
+}
+
+.encabezado .esquina.der {
+  width: 20%;
+}
+
+.encabezado .esquina.izq {
+  width: 25%;
+}
+
+.encabezado .central {
+  width: 55%;
+  margin: 0 -0.3em;
+}
+
+.nombre-mes {
+  max-height: 40px;
+  width: auto;
+}
+
+.ano {
+  max-height: 40px;
+  width: auto;
+  margin-top: -0.5em;
+}
+
+.grupo.dias .dia {
+  height: 14vh;
+  min-height: 2.0cm;
+  max-height: 3.5cm;
+  padding: .5em;
+  border-width: 1px;
+  border-style: solid;
+  border-left-style: none;
+  border-bottom-width: .5em;
+  border-top-style: none;
+}
+
+.grupo.empuja-6 dia .grupo.dia,
+.grupo.empuja-5 dia .grupo.dia {
+  height: 13vh;
+  min-height: 1.8cm;
+}
+
+.dia .texto {
+  margin-top: -0.2em;
+}
+
+.astros,
+.zodiaco {
+  font-size: 0.6em;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 50%;
+  width: 4.5em;
+  margin: 0.2em -0.15em 0;
+  margin: 0.2em 0.2em;
+  text-align: center;
+  position: absolute;
+  bottom: 1em;
+}
+
+.astros {
+  left: 0.5em;
+}
+
+.zodiaco {
+  right: 0.5em;
+}
+
+.animal {
+  text-transform: capitalize;
+}
+
+.dia img {
+  display: block;
+  width: 100%;
+  max-width: 2.5em;
+  height: auto;
+  margin: 0.2em auto;
+  padding: 0.1em;
+}
+
+.zodiaco img {
+  max-width: 3em;
+}
+
+.celda.numero {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  line-height: 1em;
+}
+
+.grupo .parrafo {
+  padding: 0.5em 1em;
+}
+
+.frase .parrafo {
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 0.5em 2em;
+}
+
+.frase .autor {
+  font-size: 0.7em;
+  font-weight: normal;
+}
+
+
+/*FORMULARIO*/
+
+.grupo-form {
+  position: fixed;
+  width: 100%;
+  background: rgba(255, 255, 255, .8);
+  height: 100vh;
+  z-index: 10;
+}
+
+.grupo-form::before,
+.grupo-form::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-attachment: fixed;
+  /*background-image: url('imgs/fondo-blanco-celestial.jpg');*/
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  will-change: transform, opacity, box-shadow, left, right;
+}
+
+.grupo-form::before {
+  left: 0;
+}
+
+.grupo-form::after {
+  right: 0;
+}
+
+.grupo-form.activado::before,
+.grupo-form.activado::after {
+  -webkit-animation: 1s ease-in-out both;
+          animation: 1s ease-in-out both;
+}
+
+.grupo-form.activado::before {
+  left: 0;
+  -webkit-animation-name: ir-izquierda;
+          animation-name: ir-izquierda;
+}
+
+.grupo-form.activado::after {
+  right: 0;
+  -webkit-animation-name: ir-derecha;
+          animation-name: ir-derecha;
+}
+
+.formulario {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  width: 70%;
+  max-width: 30em;
+  min-height: 100vh;
+  box-shadow: 0 0 10em rgba(0, 0, 0, .3);
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+  font-size: 1rem;
+  will-change: background, border-radius, height, width, box-shadow;
+  padding: 2em 1em 1em;
+}
+
+.pregunta {
+  padding: 0.5em;
+  width: 100%;
+  display: inline-block;
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+  position: relative;
+}
+
+.pregunta .entrada {
+  border: none;
+  font-size: 0.9em;
+  padding: .8em 2em;
+  width: 100%;
+  box-shadow: 0 0 0 0 rgb(255,255,62);
+  transition: all ease .3s;
+}
+
+.pregunta .entrada:focus{
+  outline: none;
+  box-shadow: 0 0 0 0.1em rgb(255,255,62);
+}
+
+.pregunta select {
+  font-size: 1.2em;
+  padding: .3em 1em;
+  width: 58%;
+  border: none;
+}
+
+.etiqueta,
+.year,
+.selector {
+  width: 75%;
+  display: inline-block;
+  margin: auto;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, .5);
+  border: none;
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+
+.etiqueta {
+  width: 20%;
+  min-width: 5em;
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+
+.formulario .year,
+.formulario .selector {
+  font-weight: 100;
+  font-size: 1.5em;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+
+.btn {
+  border: none;
+  padding: 0.8em 1em;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.2em;
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+
+.btn.cta{
+  font-size: 2.2em;
+  font-weight: normal;
+  padding: 0.2em 0.5em 0.4em;
+  line-height: 1em;
+  box-shadow: 
+    inset 0 0 0 0px rgb(60,60,60),
+    inset 0 0 0 0px,
+    inset 0 0 0 2px rgb(60,60,60), 
+    inset 0 0 0 4px;;
+  cursor: pointer;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+}
+
+.btn.cta:hover,
+.btn.cta:focus{
+  outline: none;
+  box-shadow: 
+    inset 0 0 0 3px rgb(60,60,60),
+    inset 0 0 0 4px,
+    inset 0 0 0 8px rgb(60,60,60), 
+    inset 0 0 0 10px;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.preguntas{
+  border: none;
+}
+
+.activado {
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+  pointer-events: none;
+}
+
+.activado .formulario {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  background-color: rgba(200, 200, 200, .8);
+  max-width: 70%;
+  height: 3.5em;
+  max-height: 3.5em;
+  min-height: 3em;
+  padding: 0.5em 1em;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .1);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
+}
+
+.activado .formulario * {
+  opacity: 0;
+  -webkit-transition: all 0s ease !important;
+  transition: all 0s ease !important;
+}
+
+.activado .pregunta {
+  -webkit-transition-delay: 15s;
+          transition-delay: 15s;
+  width: 20%;
+  padding: 0.5em;
+  font-size: 0.6em;
+  text-align: left;
+}
+
+.activado .formulario .year,
+.activado .formulario .selector {
+  width: 50%;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .5);
+  font-size: 1.2em;
+  padding: 0.5em;
+}
+
+.activado .etiqueta {
+  min-width: 0;
+  width: 30%;
+}
+
+.activado .btn {
+  font-size: 0.8em;
+  margin-top: 0;
+}
+/*======================LOGIN Y FORMULARIOS*/
+
+.register-form, .main-form{
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding-bottom: 3em;
+}
+
+.error {
+  display: block;
+  background: rgba(135, 42, 76, 0.8);
+  padding: .4em 1em;
+  color: white;
+  margin: -2em auto 3em;
+  position: relative;
+  z-index: 10;
+  max-width: 15em;
+  font-size: .8em;
+  animation: aparecer-error .3s ease both;
+}
+
+.main-form{
+  /*background-image: url('../img/cielo-login-klendario.jpg');  */
+  background-image: url('../Imgs/cielo-register-klendario-color.jpg');  
+}
+
+.register-form{
+  /*background-image: url('../img/cielo-register-klendario.jpg');  */  
+  background-image: url('../Imgs/cielo-register-klendario-color.jpg');  
+}
+
+.main-form .logo {
+  width: 16rem;
+  margin: auto;
+  padding-top: 8vh;
+  position: relative;
+  background: rgba(60,60,60,.5);
+  padding-bottom: .8em;
+}
+
+.main-form .logo::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  background: rgba(60,60,60,.8);
+  top: 0;
+  left: 0;
+  mix-blend-mode: multiply;
+  z-index: 1;
+  background-blend-mode: multiply;
+}
+
+.main-form .formulario {
+  min-height: initial;
+  display: block;
+  margin: auto;
+  box-shadow: 0 0 0;
+  padding: 10vh 1em 1em;
+}
+
+.main-form .entrada{
+  font-size: 1.2em;
+  padding-top: 1.2em;
+  margin-bottom: 1.6em;
+  text-align: center;
+}
+
+.main-form .etiqueta {
+  position: absolute;
+  bottom: 100%;
+  width: initial;
+  text-align: center;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  font-weight: 300;
+  font-size: 1.5em;
+  padding: 0.1em 1.2em 0.3em;
+  letter-spacing: 1px;
+}
+
+.main-form .cta{
+  margin: 3vh auto;
+  padding: 0.4em 1em 0.6em;
+  letter-spacing: 2px;
+}
+
+.main-form .cta:hover,
+.main-form .cta:focus{
+  letter-spacing: .15em;
+}
+
+.links {
+  text-decoration: none;
+  display: inline-block;
+  margin: 1em auto;
+  color: rgb(87,87,87);
+  font-weight: 600;
+  position: relative;
+  font-size: 1.1em;
+  padding: 0.3em .6em;    
+  -webkit-transition: all ease .3s;    
+  transition: all ease .3s;
+}
+
+.links::before {
+  content: '';
+  display: inline-block;
+  width: 98%;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  box-shadow: inset 0 -0.2em 0 0em rgba(255,255,62,1);
+  left: 1%;
+  z-index: -1;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+}
+
+.links:focus{
+  outline: none;
+}
+
+.links:hover::before,
+.links:focus::before{
+  box-shadow: inset 0 -0.2em 0 1em rgba(255,255,62,1);  
+}
+
+.main-form .links{
+  display: block;
+  width: 16em;
+}
+
+.links[routerlink="/Auth/Register"]{
+  width: 11em;
+}
+
+
+.register-form .formulario {
+  padding: 0 0;
+  background: rgba(255,255,255,0);
+  max-width: 45em;
+  width: 95%;
+  box-shadow: none;
+}
+
+.register-form .logo {
+  width: initial;
+  padding: 5vh 1.5em 4vh;
+  background-color: rgba(40, 40, 40, 0.9);
+}
+
+.register-form .titulo {
+  font-size: 1.8em;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  padding: .1em .5em .3em;
+  width: 14em;
+  margin: 1em auto; 
+  margin: 1em auto 2vh;
+}
+
+.register-form .preguntas{
+  float: left;
+  width: 50%;
+}
+
+.register-form .etiqueta {
+  font-size: 0.8em;
+  letter-spacing: 0.05em;
+  width: 100%;
+  width: initial;
+  position: relative;
+  z-index: 2;
+  transform: translateY(20%);
+}
+
+.register-form .entrada{
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding: .8em 1em .6em;
+  padding: 2.2vmin 1em 2vmin;
+  font-size: 1.1em;
+  box-shadow: 0 0 0 0em rgb(255,255,62), 0 0 2em rgba(0,0,0,.06);    
+}
+
+.register-form .entrada:focus{
+ box-shadow: 0 0 0 0.2em rgb(255,255,62), 0 0 2em rgba(0,0,0,.06);     
+}
+
+.register-form .cta {
+  display: block;
+  margin: 1.8em auto;
+  margin: 4vh auto;
+  padding: 0.2em 1.6em 0.4em;
+  letter-spacing: 0.05em;
+}
+
+p-calendar {
+  display: block;
+  padding: 0em;
+  position: relative;
+  margin: 1em auto;
+}
+
+.ui-calendar {
+  display: inline-block;
+  position: relative;
+  background: white;
+}
+
+.ui-widget-content {
+  font-size: 0.8em;
+}
+
+.ui-widget-header {
+  padding: 0.2em 0.5em 0.1em;
+  width: 18em;
+  background: rgb(255, 246, 61);
+  display: inline-block;
+}
+
+a.ui-corner-all {
+    line-height: 0;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.4em;
+    padding: .25em .25em 0.15em;
+    background: #fff63d;
+    color: #3c3c3c;
+    font-weight: bold;
+    height: 100%;
+    top: 0;
+}
+
+a.ui-datepicker-prev.ui-corner-all {
+    float: left;
+}
+
+a.ui-datepicker-next.ui-corner-all {
+    float: right;
+}
+
+.fa[class*="fa-angle"] {
+  background: #3c3c3c;
+  border-radius: 2em;
+  height: 1em;
+  width: 1em;
+  line-height: .5em;
+  color: #fff63d;
+}
+
+.ui-datepicker-header [class*="fa-angle"]::before {
+  color: white;
+  display: inline-block;
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+  font-size: .8em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fa-angle-left:before {
+  padding-right: .15em;
+}
+
+.fa-angle-right:before {
+  padding-left: .15em;
+}
+
+.ui-datepicker-title {
+  display: inline-block;
+}
+
+.ui-datepicker select {
+  padding: .5em;
+  border: none;
+  background: #fff63d;
+  float: left;
+  color: rgba(0,0,0,.8);
+  font-family: montserrat;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+table.ui-datepicker-calendar {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+table.ui-datepicker-calendar * {
+  display: inline-block;
+}
+
+table.ui-datepicker-calendar tr, 
+table.ui-datepicker-calendar thead, 
+table.ui-datepicker-calendar tbody{
+  display: block;
+}
+
+table.ui-datepicker-calendar td,
+table.ui-datepicker-calendar th {
+  width: calc(100% / 7);
+}
+
+table.ui-datepicker-calendar {
+  text-align: center;
+  display: block;
+  width: 90%;
+  width: calc(100% - 2em);
+  margin: .5em 1em 1em;
+}
+
+table.ui-datepicker-calendar th {
+  padding: .6em 0;
+}
+
+a.ui-state-default {
+  display: block;
+  text-decoration: none;
+  padding: .3em;
+  color: rgba(60, 60, 60, .8);
+}
+
+a.ui-state-default:hover {
+  background: lightgrey;
+  color: rgba(60, 60, 60, .9);
+}
+
+a.ui-state-default:focus {
+  background: rgb(255, 246, 61);
+  color: rgba(60, 60, 60, 1);
+}
+
+td.ui-datepicker-other-month a.ui-state-default {
+    opacity: .4;
+}
+
+td.ui-state-disabled a.ui-state-default {
+    cursor: none;
+    pointer-events: none;
+}
+
+/*======================INTERFAZ*/
+
+.utilities {
+  position: absolute;
+  background: #3c3c3c;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+/*======================ANIMACIONES*/
+
+@-webkit-keyframes ir-izquierda {
+  90% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes ir-izquierda {
+  90% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes ir-derecha {
+  90% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes ir-derecha {
+  90% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes aparecer-error {
+  0% {transform: translateY(-100%); opacity: 0;}
+  90% {transform: translateY(10%); opacity: 1;}
+  100% {transform: translateY(0%); opacity: 1;}
+}
+
+@media (max-width: 960px) {
+  
+  .seleccion-input {
+    width: 100%;
+  }
+  
+  .seccion.piepagina {
+    padding: 0 2%;
+  }
+
+  .caja .celda:not(.numero){
+    height: 5rem;
+  }
+
+  .icono.celda:not(.numero)::before {
+    font-size: 2.5rem;
+  } 
+  
+  .binomial {
+    font-size: 2.3rem;
+  }
+
+}
+@media (max-height: 720px){
+  body{
+    font-size: 12px;
+  }
+}
+@media (min-width: 960px) {
+  .dia img {
+    max-width: 1.7em;
+  }
+  .zodiaco img {
+    max-width: 3em;
+  }
+  .astros,
+  .zodiaco {
+    font-size: 0.8em;
+  }
+}
+@media (min-width: 1200px) {
+  .grupo {
+    padding: 0.3em 5%;
+  }
+  .seccion.piepagina {
+    text-align: center;
+    padding: 0 5%;
+  }
+}
+@media (min-width: 1600px) {
+  .grupo {
+    padding: 0.3em 10%;
+  }
+  .seccion.piepagina {
+    padding: 0 10%;
+  }
+}
+
+@media print {
+  .grupo-form,
+  div.col-lg-7,
+  calculator {
+    display: none;
+  }
+  .letra-gris,
+  .dias-semana .dia,
+  .letra-gallo,
+  .letra-buey,
+  .letra-serpiente {
+    color: lightgray;
+  }
+  .dias-semana .dia,
+  {
+    color: rgba(0, 0, 0, .1);
+  }
+  .grupo.mes {
+    padding-bottom: 0 !important;
+    page-break-before: always !important;
+  }
+  .grupo.dias .dia {
+    height: 2cm;
+  }
+  div.empuja-5 dia .grupo.dia,
+  div.empuja-6 dia .grupo.dia {
+    height: 1.8cm;
+    min-height: 1.8cm;
+  }
+}
+
+@page {
+  margin: 0.6cm;
+}
+

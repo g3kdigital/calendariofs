@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "klendar";
+  src:url("fonts/klendar.eot");
+  src:url("fonts/klendar.eot?#iefix") format("embedded-opentype"),
+    url("fonts/klendar.woff") format("woff"),
+    url("fonts/klendar.ttf") format("truetype"),
+    url("fonts/klendar.svg#klendar") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "klendar" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="kldr-"]:before,
+[class*=" kldr-"]:before {
+  font-family: "klendar" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.kldr-caballo-icono:before {
+  content: "\61";
+}
+.kldr-yin-icono-2:before {
+  content: "\62";
+}
+.kldr-cabra-icono:before {
+  content: "\63";
+}
+.kldr-cerdo-icono:before {
+  content: "\64";
+}
+.kldr-conejo-icono:before {
+  content: "\65";
+}
+.kldr-dragon-icono:before {
+  content: "\66";
+}
+.kldr-agua-icono:before {
+  content: "\67";
+}
+.kldr-madera-icono:before {
+  content: "\68";
+}
+.kldr-fuego-icono:before {
+  content: "\69";
+}
+.kldr-metal-icono:before {
+  content: "\6a";
+}
+.kldr-tierra-icono:before {
+  content: "\6b";
+}
+.kldr-agua-icono-2:before {
+  content: "\6c";
+}
+.kldr-gallo-icono:before {
+  content: "\6d";
+}
+.kldr-mono-icono:before {
+  content: "\6e";
+}
+.kldr-perro-icono:before {
+  content: "\6f";
+}
+.kldr-raton-icono:before {
+  content: "\70";
+}
+.kldr-serpiente-icono:before {
+  content: "\71";
+}
+.kldr-tigre-icono:before {
+  content: "\72";
+}
+.kldr-toro-izono:before {
+  content: "\73";
+}
+.kldr-yin-icono:before {
+  content: "\75";
+}
+.kldr-yinyang-icono:before {
+  content: "\76";
+}
+.kldr-yang-icon-17:before {
+  content: "\77";
+}
+.kldr-yin-icono-3:before {
+  content: "\78";
+}
+.kldr-yang-icono:before {
+  content: "\74";
+}
